@@ -3,7 +3,7 @@ import React from "react";
 function Homepage() {
   return (
     <>
-      <h1>Homepage</h1>
+      {/* <h1 className="text-6xl font-bold">Homepage</h1> */}
       <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -13,7 +13,7 @@ function Homepage() {
         essentially unchanged. It was popularised in the 1960s with the release
         of Letraset sheets containing Lorem Ipsum passages, and more recently
         with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
+        of Lorem Ipsum. fsfgs
       </p>
     </>
   );
