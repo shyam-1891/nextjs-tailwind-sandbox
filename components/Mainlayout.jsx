@@ -1,20 +1,18 @@
 import React from "react";
 import Navbar from "./Navbar";
+import MenuContextProvider from "@/context/MenuContext";
+import Footer from "./Footer";
 
 function Mainlayout({ children }) {
   return (
     <div className="min-h-full">
-      <Navbar />
-      <header class="bg-white shadow">
-        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900">
-            Dashboard
-          </h1>
-        </div>
-      </header>
-      <main>
-        <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">{children}</div>
-      </main>
+      <MenuContextProvider>
+        <Navbar />
+      </MenuContextProvider>
+
+      <div className="bottom_section_wrapper min-h-[800px] pb-[120px]">{children}</div>
+
+      <Footer></Footer>
     </div>
   );
 }
