@@ -1,17 +1,20 @@
-'use client';
+"use client";
 import { createContext, useState } from "react";
 
 export const MenuContext = createContext();
 
 const MenuContextProvider = ({ children }) => {
-    const [open , setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-    const toggle = () => {
-        // console.log("toggle click");
-        setOpen(!open);
-    }
+  const toggle = () => {
+    setOpen(!open);
+  };
 
-    return <MenuContext.Provider value={{ open, toggle }}>{ children }</MenuContext.Provider>
-}
+  return (
+    <MenuContext.Provider value={{ open, toggle }}>
+      {children}
+    </MenuContext.Provider>
+  );
+};
 
 export default MenuContextProvider;

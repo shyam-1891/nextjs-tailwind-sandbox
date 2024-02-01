@@ -10,7 +10,9 @@ function Mainlayout({ children }) {
         <Navbar />
       </MenuContextProvider>
 
-      <div className="bottom_section_wrapper min-h-[800px] pb-[120px]">{children}</div>
+      <div className="bottom_section_wrapper min-h-[800px] pb-[120px]">
+        {children}
+      </div>
 
       <Footer></Footer>
     </div>
